@@ -334,9 +334,6 @@ class PreTrainedModelWrapper(nn.Module, transformers.utils.PushToHubMixin):
             #state_dict = pretrained_model_name_or_path.state_dict()
 
         #model.post_init(state_dict=state_dict)# 다운로드된 파일들 출력
-        print("다운로드된 파일 출력 - All downloaded files:")
-        for file in downloaded_files:
-            print(file)
 
 
         # cache `forward` args for general use (avoids incompatible args across architectures)
